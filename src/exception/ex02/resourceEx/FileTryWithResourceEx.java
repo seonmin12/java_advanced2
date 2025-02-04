@@ -2,7 +2,7 @@ package exception.ex02.resourceEx;
 
 import java.io.*;
 
-public class FileTryWithResourceEx implements AutoCloseable {
+public class FileTryWithResourceEx  {
     public static void main(String[] args) {
 
         try (FileWriter file = new FileWriter("data2.txt")) {
@@ -34,14 +34,10 @@ public class FileTryWithResourceEx implements AutoCloseable {
 
     }
 
-    @Override
-    public void close() throws Exception {
 
-    }
 }
 // try-with-resources 문의 괄호  () 객체를 생성하는 문장을 넣으면
 // 따로 close() 호출하지 않아도 try 블럭을 벗어나는 순간 자동적으로 close() 가 호출된다.
 // 다음에 catch 블럭 또는 finally 블럭이 수행된다.
 
 
-// 4시 20분에 시작하겠습니다.
