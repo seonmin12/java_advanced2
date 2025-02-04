@@ -5,16 +5,22 @@ import java.io.IOException;
 
 public class FileEx {
     public static void main(String[] args)  {
-        FileWriter file = null;
+        FileWriter file1 = null;
+        FileWriter file2 = null;
         //win : ctrl+alt+T   mac : option+command + T
         try {
-            file  = new FileWriter("data.txt");
-            file.write("Java Advanced Programming");
+            file1  = new FileWriter("data.txt");
+            file1.write("Java Advanced Programming1");
+
+            file2  = new FileWriter("data1.txt");
+            file2.write("Java Advanced Programming2");
+
         } catch (IOException e) {
             throw  new RuntimeException(e);
         } finally {
             try {
-                file.close();
+                file1.close();
+                file2.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
