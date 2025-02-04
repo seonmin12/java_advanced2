@@ -6,6 +6,7 @@ public class Exception02 {
         String[] stringarray = {"100","1oo", null};
         for(int i = 0; i< stringarray.length+1 ; i++){
             try {
+                assert stringarray[i] != null;
                 int value = Integer.parseInt(stringarray[i]);
 //            } catch(Exception e){
 //                e.getMessage();
@@ -18,3 +19,4 @@ public class Exception02 {
         }
     }
 }
+
