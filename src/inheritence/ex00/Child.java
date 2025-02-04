@@ -1,4 +1,4 @@
-package inheritence;
+package inheritence.ex00;
 
 public class Child extends Parent{
     public String field2;

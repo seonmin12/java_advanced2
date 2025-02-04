@@ -1,4 +1,5 @@
-package inheritence;
+package inheritence.ex00;
+
 //필드 다형성
 public class CarMain {
     public static void main(String[] args) {

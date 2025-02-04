@@ -1,4 +1,4 @@
-package inheritence;
+package inheritence.ex00;
 
 public class KumhoTire extends Tire{
     @Override
