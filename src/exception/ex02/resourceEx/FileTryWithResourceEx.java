@@ -6,7 +6,7 @@ public class FileTryWithResourceEx  {
     public static void main(String[] args) {
 
         try (FileWriter file = new FileWriter("data2.txt")) {
-            file.write("Java Programming");
+            file.write("Java Programming1111111");
         } catch (IOException e) {
             e.printStackTrace();
         }
