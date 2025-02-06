@@ -31,15 +31,15 @@ public class FactoryExample {
 
 	public void getResult(Factory mainFactory, char mainFactorySkill, IWorkingTogether partner) {
 		
-		System.out.println("* " + mainFactory.getFactoryName() + " ������ �Ϸ� ���귮�� ��Ʈ�� ���� ���� �� �߰� ���귮�� ������ ����.");
+		System.out.println("* " + mainFactory.getFactoryName() + " ");
 		// TODO
-		System.out.println("1. �Ϸ� ���귮 = "+mainFactory.makeProducts(mainFactorySkill));
+		System.out.println("1. = "+mainFactory.makeProducts(mainFactorySkill));
 		if(mainFactory instanceof CarFactory){
 			CarFactory parFactory = (CarFactory) mainFactory;
-			System.out.println("2. ��Ʈ�� ���� ["+((Factory)partner).getFactoryName()+"] ���� �� �߰� ���귮 = "+parFactory.workTogether(partner));
+			System.out.println("2.  ["+((Factory)partner).getFactoryName()+"]  = "+parFactory.workTogether(partner));
 		}else if(mainFactory instanceof TVFactory){
 			TVFactory parFactory = (TVFactory) mainFactory;
-			System.out.println("2. ��Ʈ�� ���� ["+((Factory)partner).getFactoryName()+"] ���� �� �߰� ���귮 = "+parFactory.workTogether(partner));
+			System.out.println("2.["+((Factory)partner).getFactoryName()+"]  = "+parFactory.workTogether(partner));
 		}
 
 		System.out.println("--------------------------------------------------------------");
