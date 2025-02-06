@@ -1,4 +1,4 @@
-package interfaceEx.ex02;
+package interfaceEx.ex02.CarEx;
 
 public class HankookTire implements Tire {
     @Override

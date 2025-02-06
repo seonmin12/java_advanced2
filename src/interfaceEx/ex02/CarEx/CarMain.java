@@ -1,4 +1,4 @@
-package interfaceEx.ex02;
+package interfaceEx.ex02.CarEx;
 
 
 //필드 다형성

@@ -1,4 +1,4 @@
-package interfaceEx.ex02;
+package interfaceEx.ex02.CarEx;
 
 import inheritence.ex00.HankookTire;
 import inheritence.ex00.Tire;
